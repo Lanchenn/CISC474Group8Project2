@@ -1,18 +1,22 @@
-<p>
-  home works!
-</p>
-<div [hidden]="artists.length==0">
-  <h2>haha yoloyoloyoloyolo</h2>
-  <div class="container-fluid">
-    <table class='table-responsive table'>
-      <thead>
-        <th>hahah</th><th>hohohoho</th>
-      </thead>
-      <tr *ngFor="let artist of artists;let i=index" (click)='showDetail(i,artist)' class="clickable" >
-        <td> ????</td>
-        <td> ????</td>
-      </tr>
-    </table>
+
+<nav>
+  <div>
+    <div>
+      <a >Welcome to {{title}}!</a>
+    </div>
+
+    <div>
+      <ul>
+        <li routerLinkActive='active'>
+          <a routerLink="pictures">Pictures</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <br/>&nbsp;
+</nav>
+
+<div>
+  <img src="http://wwwcdn.artistdaily.com/wp-content/uploads/5047.FRAMED_5F00_Dancer_5F00_SteveHenderso.jpg" class="img-rounded" width="30%">
+  <img src="https://www.metmuseum.org/toah/images/hb/hb_2001.78.jpg" class="img-rounded" width="30%">
+  <img src="http://haeusler-contemporary.com/wp-content/uploads/Partenheimer-22.jpg" class="img-rounded" width="30%">
 </div>
