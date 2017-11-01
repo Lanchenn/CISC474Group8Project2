@@ -21,7 +21,7 @@ export class ArtMuseumService {
   }
 
   getNineteenthCentury = (page: number) => this.http.get(
-    'http://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19' +
+    'http://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19'
     + '&page=' + page,
       { headers: this.headers }).map(x => {
         console.log(x.json());
