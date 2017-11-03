@@ -10,16 +10,8 @@ import { ArtMuseumService } from '../../modules/art-museum.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  NineteenthCentury: any[] = [ ];
-  attributes: any[] = [ ];
-  constructor(private _apiSvc: ArtMuseumService, private _dialogService: DialogService) {
-    //_apiSvc.getTest();
-    _apiSvc.getNineteenthCentury(1).subscribe(x => {
-      //this.NineteenthCentury = x.NineteenthCentury.nineteenthCentury;
-      //this.attributes = x.NineteenthCentury['@attr'];
-      console.log(x);
-     });
-   }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -20,10 +20,8 @@ export class ArtMuseumService {
     })
   }
 
-  getNineteenthCentury = (page: number) => this.http.get(
-    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19'
-    + '&page=' + page).map(x => {
-        console.log(x.json());
+  getNineteenthCentury = () => this.http.get(
+    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19').map(x => {
         return x.json();
       })
 
