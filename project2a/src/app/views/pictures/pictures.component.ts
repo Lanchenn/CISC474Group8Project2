@@ -20,13 +20,13 @@ export class PicturesComponent implements OnInit {
 
         for (i = 0; i < x.artObjects.length; i++)
         {
-          this.NineteenthCentury[i] = x.artObjects[i].webImage.url;
+          this.NineteenthCentury[i] = x.artObjects[i];
           console.log(this.NineteenthCentury[i]);
         }
           console.log(x);
        });
      }
-
+//.webImage.url
     ngOnInit() {
     }
 
