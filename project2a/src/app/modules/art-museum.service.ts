@@ -21,12 +21,12 @@ export class ArtMuseumService {
   }
 
   getNineteenthCentury = () => this.http.get(
-    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19').map(x => {
+    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100&f.dating.period=19').map(x => {
         return x.json();
       })
 
   getTwentyCentury = (page: number) => this.http.get(
-    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=20'
+    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100f.dating.period=20'
     + '&page=' + page).map(x => {
         console.log(x.json());
         return x.json();
