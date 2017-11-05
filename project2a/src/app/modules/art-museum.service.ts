@@ -13,22 +13,19 @@ export class ArtMuseumService {
   constructor(private http: Http) {
   }
 
-  getTest(): void {
-    this.http.get('https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&f.dating.period=19').subscribe(data => {
-      this.results = data['artObjects'];
-      console.log(this.results);
-    })
-  }
-
   getNineteenthCentury = () => this.http.get(
+    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100&f.dating.period=17').map(x => {
+        return x.json();
+      })
+
+  getTwentiethCentury = () => this.http.get(
+    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100&f.dating.period=18').map(x => {
+        return x.json();
+      })
+
+  getTwentyFirstCentury = () => this.http.get(
     'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100&f.dating.period=19').map(x => {
         return x.json();
       })
 
-  getTwentyCentury = (page: number) => this.http.get(
-    'https://www.rijksmuseum.nl/api/nl/collection?key=jObXZTXX&format=json&ps=100f.dating.period=20'
-    + '&page=' + page).map(x => {
-        console.log(x.json());
-        return x.json();
-      })
 }
