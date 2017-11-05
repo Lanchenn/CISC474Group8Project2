@@ -3,28 +3,32 @@
   <h1>
     Welcome to Rijksstudio!
   </h1>
-  <div>
-    <p>17 Century &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      18 Century   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      19 Century
-    </p>
-  </div>
+  <table id="tt">
+    <tr>
+      <th text-align="right">17 Century</th>
+      <th text-align="right">18 Century</th>
+      <th text-align="center">19 Century</th>
+    </tr>
 
-  <div>
+    <tr>
+      <td width="40px">
+        <a routerLink="pictures" routerLinkActive="active">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Snayers_Battle_of_Vuchterheide.jpg/640px-Snayers_Battle_of_Vuchterheide.jpg" class="img-rounded" width="100%">
+        </a>
+      </td>
 
-    <a routerLink="pictures" routerLinkActive="active">
-      <img src="http://wwwcdn.artistdaily.com/wp-content/uploads/5047.FRAMED_5F00_Dancer_5F00_SteveHenderso.jpg" class="img-rounded" width="30%">
-    </a>
+      <td>
+        <a routerLink="pictures20" routerLinkActive="active">
+          <img src="https://www.realmofhistory.com/wp-content/uploads/2016/10/animation-recreates-18th-century-paris.jpg" class="img-rounded" width="100%">
+        </a>
+      </td>
 
-
-    <a routerLink="pictures20" routerLinkActive="active">
-      <img src="https://www.metmuseum.org/toah/images/hb/hb_2001.78.jpg" class="img-rounded" width="30%">
-    </a>
-
-
-    <a routerLink="pictures21" routerLinkActive="active">
-      <img src="http://haeusler-contemporary.com/wp-content/uploads/Partenheimer-22.jpg" class="img-rounded" width="30%">
-    </a>
-  </div>
+      <td>
+        <a routerLink="pictures21" routerLinkActive="active">
+          <img src="http://www.sothebys.com/content/dam/sothebys-pages/blogs/sothebysatauction/2016/11/girard-french-landscape-recirc-1.jpg" class="img-rounded" width="100%">
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 <router-outlet></router-outlet>
